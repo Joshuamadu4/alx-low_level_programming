@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Alphabetical Prints 
+ * main - Alphabetical Prints
  *
  * Return: Always (Success)
  */
