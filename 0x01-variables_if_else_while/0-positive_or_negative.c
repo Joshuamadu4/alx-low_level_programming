@@ -4,7 +4,6 @@
 
 /**
  * main - Alphabical characters printing
- * 
  * Return: Always (Sucess)
  */
 int main(void)
