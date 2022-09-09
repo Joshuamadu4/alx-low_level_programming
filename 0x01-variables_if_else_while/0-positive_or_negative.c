@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
- * main-Alphabical characters printing 
- *
+ * main - Alphabical characters printing
+ * 
  * Return: Always (Sucess)
  */
 int main(void)
