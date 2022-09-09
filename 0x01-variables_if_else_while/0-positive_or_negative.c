@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - Alphabical characters printing 
+ * main-Alphabical characters printing 
  *
  * Return: Always (Sucess)
  */
@@ -16,7 +16,7 @@ int main(void)
 
 	if (n > 0)
 	{
-		printf("%d is positive\n",n);
+		printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{
