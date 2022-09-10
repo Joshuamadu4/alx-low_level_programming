@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Combination of numbers 
+ * main - Combination of numbers
  *
- * Return: Always (Success) 
+ * Return: Always (Success)
  */
 int main(void)
 {
@@ -21,7 +21,7 @@ int main(void)
 					putchar(b);
 					putchar(c);
 
-					if (a != '7') 
+					if (a != '7')
 					{
 						putchar(',');
 						putchar(' ');
