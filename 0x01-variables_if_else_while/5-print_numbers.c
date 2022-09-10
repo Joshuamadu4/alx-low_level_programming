@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- *
  * main - Printing number from 0 to 9
- *
+ * 
  * Return: Always (Success)
  */
 int main(void)
