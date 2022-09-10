@@ -21,18 +21,28 @@ int main(void)
 			{
 				for (d = 48; d <= 57; ++d)
 				{
+					if (((c + d) > (a + b) && c >= a) || a < c)
 					putchar(a);
 					putchar(b);
+					putchar(' ');
 					putchar(c);
 					putchar(d);
-					if (a != 57 || b != 56 || c != 57 || d != 57)
+
+					if (a + b + c + d == 227 && c == 57)
 					{
-						putchar(44);
-						putchar(32);
+					break;
+					}
+					else
+					{
+					putchar(',');
+					putchar(' ');
 					}
 				}
 			}
 		}
 	}
+
+	putchar('\n');
+
 	return (0);
 }
