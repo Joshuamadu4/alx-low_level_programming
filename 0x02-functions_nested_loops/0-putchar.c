@@ -1,13 +1,20 @@
 #include "main.h"
 
 /**
- * main - Prints _putchar 
+ * main - Entry 
  *
- * Return: Always 1 (Success)
- * on error, -1 is returned
+ * Return: Always 0 (Success)
  */
-int _putchar(char a)
+int main(void)
 {
-	return (write(1, &a, 1));
+	char ch = "_putchar"
 
+	while (ch)
+	{
+		_putchar(ch);
+		ch++;
+	}
+	_putchar('\n');
+
+	return (0);
 }
