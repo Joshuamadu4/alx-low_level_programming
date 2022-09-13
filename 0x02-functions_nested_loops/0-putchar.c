@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <main.h>
 
 /**
  * main - Prints _putchar 
@@ -8,6 +7,14 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
+	char a[] = "_putchar";
+	int b;
+
+	for (b = 0; b<9; b++)
+	{
+		_putchar(a[b]);
+	}
+	_putchar('\n');
+
 	return (0);
 }
