@@ -3,18 +3,11 @@
 /**
  * main - Prints _putchar 
  *
- * Return: Always 0 (Success)
+ * Return: Always 1 (Success)
+ * on error, -1 is returned
  */
-int main(void)
+int _putchar(char a)
 {
-	char a[] = "_putchar";
-	int b;
+	return (write(1, &c, 1));
 
-	for (b = 0; b < 9; b++)
-	{
-		_putchar(a[b]);
-	}
-	_putchar('\n');
-
-	return (0);
 }
