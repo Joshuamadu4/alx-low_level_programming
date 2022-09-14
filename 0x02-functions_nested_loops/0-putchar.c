@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * @a - Print _putchar
- * return: always 0 (Success)
+ * main - Printing putchar
+ * 
+ * Return: Always 0 (Success)
  */
 
 int main(void)
