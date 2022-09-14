@@ -5,7 +5,7 @@
  * main - Print _putchar
  * return: always 0 (Success)
  */
-int main(void)
+int _putchar(char a)
 {
 	_putchar('_');
 	_putchar('p');
