@@ -2,8 +2,10 @@
 
 /**
  * @a - Printing Alphabets
- * return: 0 Success
+ *
+ * Return: Always 0 (Success) 
  */
+
 void print_alphabet(void)
 {
 	char c;
