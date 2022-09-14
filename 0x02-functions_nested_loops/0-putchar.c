@@ -1,20 +1,22 @@
 #include "main.h"
 
 /**
- * main - Entry 
- *
- * Return: Always 0 (Success)
+ * main - Print _putchar
+ * return: always 0 
  */
 int main(void)
 {
-	char  a = "_putchar"
-
-	while (a)
-	{
-		_putchar(a);
-		a++;
-	}
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
 
 	return (0);
 }
+
+		
