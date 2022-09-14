@@ -9,15 +9,15 @@
 int main(void)
 {
 	unsigned long count, a, b, c;
-	
+
 	a = 0;
 	b = 1;
 	for (count = 0; count < 50; count++)
 	{
-		a = b + c;
+		c = a + b;
+		a = b;
 		b = c;
-		c = a;
-		printf("%lu", a);
+		printf("%lu", c);
 		if (count == 49)
 			putchar('\n');
 		else
