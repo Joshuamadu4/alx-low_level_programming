@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdli.h>
+#include <stdlib.h>
 
 /**
  * main - Prints coints left
@@ -17,7 +17,7 @@ int main(int args, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	c = atoi(argv[1];
+	c = atoi(argv[1]);
 	if (c < 0)
 	{
 		printf("0\n");
@@ -39,6 +39,6 @@ int main(int args, char *argv[])
 		break;
 	coins += 1;
 	}
-	printf("%d\n" coins);
+	printf("%d\n", coins);
 	return (0);
 }
