@@ -88,12 +88,34 @@ void print_class(unsigned char *e_ident)
 }
 
 /**
+ * print_data - Prints the data of an ELF header.
+ * @e_ident: A pointer to an array containing the ELF class.
+ */
+void print_data(unsigned char *e_ident)
+{
+	printf("  Data:                              ");
+
+	switch (e_ident[EI_DATA])
+	{
+		case ELFDATANONE:
+			printf("none\n");
+			break;
+		case ELFDATA2LSB:
+			printf("2's complement, big endian\n");
+			break;
+		default:
+			printf("<unknown: %x>\n", e_ident[EI_CLASS]);
+	}
+}
+
+/**
  * print_version - Prints the version of an ELF header.
  * @e_ident: A pointer to an array containing the ELF
  */
 void print_version(unsigned char *e_ident)
 {
-	printf("  Version: %d", e_ident[EI_VERSION]);
+	printf("  Version:                           %d",
+			e_ident[EI_VERSION]);
 
 	switch (e_ident[EI_VERSION])
 	{
@@ -150,13 +172,15 @@ void print_osabi(unsigned char *e_ident)
 			printf("<unknown: %x>\n", e_ident[EI_OSABI]);
 	}
 }
+
 /**
  * print_abi - Prints the ABI version of an ELF header.
  * @e_ident: A pointer to an array containing the ELF ABI version.
  */
 void print_abi(unsigned char *e_ident)
 {
-	printf("  ABI Version:                       %d\n", e_ident[EI_ABIVERSION]);
+	printf("  ABI Version:                       %d\n",
+			e_ident[EI_ABIVERSION]);
 }
 
 /**
@@ -285,4 +309,3 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	return (0);
 
 }
-
